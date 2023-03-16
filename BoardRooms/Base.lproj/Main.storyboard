@@ -81,7 +81,7 @@
         <!--Details room screen-->
         <scene sceneID="jMT-1j-X0e">
             <objects>
-                <viewController id="1TE-Mo-mBc" userLabel="Details room screen" customClass="ViewController" customModule="TrainingForNano2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1TE-Mo-mBc" userLabel="Details room screen" customClass="ViewController" customModule="BoardRooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b7w-Z6-sJ8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,6 +239,15 @@
                     <view key="view" contentMode="scaleToFill" id="Iv3-9Z-gEO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC7-6c-pKq">
+                                <rect key="frame" x="175" y="416" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fTg-ar-9cg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
