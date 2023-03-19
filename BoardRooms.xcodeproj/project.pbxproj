@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2416FC129C669980044F8D9 /* BookingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2416FC029C669980044F8D9 /* BookingsCollectionViewCell.swift */; };
 		FFE570B929BEFD10009DDB29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE570B829BEFD10009DDB29 /* AppDelegate.swift */; };
 		FFE570BB29BEFD10009DDB29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE570BA29BEFD10009DDB29 /* SceneDelegate.swift */; };
 		FFE570BD29BEFD10009DDB29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE570BC29BEFD10009DDB29 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2416FC029C669980044F8D9 /* BookingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFE570B529BEFD10009DDB29 /* BoardRooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardRooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE570B829BEFD10009DDB29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE570BA29BEFD10009DDB29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				FFE570C129BEFD11009DDB29 /* Assets.xcassets */,
 				FFE570C329BEFD11009DDB29 /* LaunchScreen.storyboard */,
 				FFE570C629BEFD11009DDB29 /* Info.plist */,
+				A2416FC029C669980044F8D9 /* BookingsCollectionViewCell.swift */,
 			);
 			path = BoardRooms;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2416FC129C669980044F8D9 /* BookingsCollectionViewCell.swift in Sources */,
 				FFE570BD29BEFD10009DDB29 /* ViewController.swift in Sources */,
 				FFE570B929BEFD10009DDB29 /* AppDelegate.swift in Sources */,
 				FFE570BB29BEFD10009DDB29 /* SceneDelegate.swift in Sources */,
