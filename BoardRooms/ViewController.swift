@@ -7,11 +7,11 @@
 
 import UIKit
 //Heba
-class ViewControllerSignin : UIViewController {
+class ViewController : UIViewController {
 
-    @IBOutlet weak var JobNumber: UITextField!
+   @IBOutlet weak var JobNumber: UITextField!
     
-    @IBOutlet weak var PasswordField: UITextField!
+   @IBOutlet weak var PasswordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
