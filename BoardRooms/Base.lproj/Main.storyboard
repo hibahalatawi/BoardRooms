@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoardRooms" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="BoardRooms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@ to see you, Again!</string>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter your job number " minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="zF7-a9-xNN">
-                                <rect key="frame" x="16" y="265" width="355" height="50"/>
+                                <rect key="frame" x="19" y="265" width="355" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.29999999999999999" y="0.0" width="1" height="1"/>
                                 <attributedString key="attributedText"/>
@@ -61,16 +61,18 @@ to see you, Again!</string>
                     <connections>
                         <outlet property="JobNumber" destination="zF7-a9-xNN" id="JdM-db-evN"/>
                         <outlet property="PasswordField" destination="lBG-cq-G3m" id="bhQ-zt-7RB"/>
+                        <outlet property="buttonlogin" destination="W7X-NW-W74" id="4jp-85-7gW"/>
+                        <segue destination="YSA-OR-X5m" kind="presentation" modalPresentationStyle="fullScreen" id="Gla-t9-n0H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434.35114503816794" y="-30.281690140845072"/>
+            <point key="canvasLocation" x="-576" y="-41"/>
         </scene>
-        <!--View Controller-->
+        <!--BoardRooms-->
         <scene sceneID="1XG-mh-cmK">
             <objects>
-                <viewController id="YSA-OR-X5m" sceneMemberID="viewController">
+                <viewController id="YSA-OR-X5m" userLabel="BoardRooms" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T7P-Tw-fOh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
