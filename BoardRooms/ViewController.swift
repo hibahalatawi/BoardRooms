@@ -7,16 +7,59 @@
 
 import UIKit
 //Heba
+
 class ViewControllerSignin : UIViewController {
     
     @IBOutlet weak var JobNumber: UITextField!
+
+class ViewController : UIViewController {
+
+   @IBOutlet weak var JobNumber: UITextField!
+
+   @IBOutlet weak var PasswordField: UITextField!
+
+   @IBOutlet weak var buttonlogin: UIButton!
+
     
-    @IBOutlet weak var PasswordField: UITextField!
+    var employe : [Employee]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("DDD")
+        getData()
+       // print("DDD")
     }
+    @IBAction func buttonTapped() {
+        let employName = JobNumber.text
+        let employPassword = PasswordField.text
+        JobNumber.resignFirstResponder()
+        guard let employe = employe else{return}
+        for i in employe{
+            if i.name == employName && i.password == employPassword{
+                BoardRooms()
+                
+                performSegue(withIdentifier: "goToHome", sender: nil)
+            }
+        }
+    }
+    func getData(){
+        //
+
+        if let url = URL(string:"https://0a41c646-1e60-44d1-ad87-0ccd77cf9fad.mock.pstmn.io/employees"){
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let data = data{
+                    do {
+                        let res = try JSONDecoder().decode([Employee].self, from: data)
+                        self.employe = res
+                        
+                        print(res)
+                    }catch let error {
+                        print(error)
+                    }
+                }
+            }.resume()
+        }
+    }
+
     
 }
 //Mai
@@ -27,6 +70,19 @@ class ViewControllerMainScreen : UIViewController {
     }}
         
 //Omnya
+
+}
+//Mai
+class BoardRooms : UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //print("DDD")
+    }
+  
+}
+    //Omnya
+
 class ViewControllerDetailRroomScreen: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
     // MARK: - outlets:
     @IBOutlet weak var CollectionView: UICollectionView!
@@ -275,7 +331,7 @@ class ViewControllerSuccessScreen : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("DDD")
+      //  print("DDD")
     }
     
 }
